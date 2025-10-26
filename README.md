@@ -41,23 +41,31 @@ Run the "stop.ps1" script.
 
 ```
 ReactWebsite-preset/
+├── .gitignore
+├── README.md
+├── run.ps1
+├── stop.ps1
 ├── backend/
-│   ├── main.py
 │   ├── config.py
+│   ├── main.py
 │   ├── api/
 │   │   ├── __init__.py
 │   │   └── test.py
-│   ├── models/
-│   │   └── testModel.py
-│   └── instance/
-│       └── database.db (auto-generated)
-├── frontend/
-│   ├── src/
-│   ├── package.json
-│   └── node_modules/ (auto-generated)
-├── run.ps1
-├── stop.ps1
-└── .gitignore
+│   └── models/
+│       └── testModel.py
+└── frontend/
+    ├── index.html
+    ├── package.json
+    ├── vite.config.js
+    ├── public/
+    └── src/
+        ├── App.css
+        ├── App.jsx
+        ├── main.jsx
+        └── pages/
+            └── Home/
+                ├── Home.css
+                └── Home.jsx
 ```
 
 ## API Endpoints
@@ -76,5 +84,6 @@ You can modify these settings in `backend/config.py`.
 The project uses SQLite with automatic database initialization. The database file is created at `backend/instance/database.db` on first run.
 
 ## License
+
 
 MIT
